@@ -3,6 +3,7 @@ package utilities;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -13,6 +14,7 @@ import java.time.format.DateTimeFormatter;
 public abstract class TestBaseBeforeMethodAfterMethod {
     protected static WebDriver driver;
     protected String tarih;
+    protected Actions actions;
 
 
     @BeforeMethod
@@ -21,6 +23,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+        actions=new Actions(driver);
 
 
         LocalDateTime date=LocalDateTime.now();

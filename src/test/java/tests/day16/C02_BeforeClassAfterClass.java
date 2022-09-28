@@ -5,11 +5,11 @@ import utilities.TestBaseBeforeClassAfterClass;
 
 public class C02_BeforeClassAfterClass extends TestBaseBeforeClassAfterClass {
 
+    // @BeforeClass ve @AfterClass notasyonlarını TestNG de kullanırken JUnit'teki gibi static yapmaya gerek yoktur
     @Test
-    public void testamazon() {
+    public void testAmazon() {
         driver.get("https://www.amazon.com");
     }
-
 
     @Test
     public void testBestBuy() {
@@ -17,8 +17,7 @@ public class C02_BeforeClassAfterClass extends TestBaseBeforeClassAfterClass {
     }
 
     @Test
-    public void testTechproEducation() {
+    public void testTechproed() {
         driver.get("https://www.techproeducation.com");
-
     }
 }
