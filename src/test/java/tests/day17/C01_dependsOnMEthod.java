@@ -9,7 +9,7 @@ public class C01_dependsOnMEthod extends TestBaseBeforeMethodAfterMethod {
 
     @Test
     public void test01() {
-        driver.get("https://www.amazon.com");
+        driver.get("https://wamazon1.com");
 
     }
 
