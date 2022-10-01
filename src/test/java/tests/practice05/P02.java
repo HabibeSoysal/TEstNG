@@ -25,7 +25,5 @@ public class P02 extends TestBaseBeforeMethodAfterMethod {
 
 
 
-
-
     }
 }
