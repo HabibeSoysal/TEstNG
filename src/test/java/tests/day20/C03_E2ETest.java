@@ -48,6 +48,7 @@ public class C03_E2ETest {
             Assert.assertTrue(hmcPage.roomReservationText.isDisplayed());
             //OK butonuna tıklayın.
             hmcPage.okButton.click();
+            driver.closeDriver();
         }
 
 }
