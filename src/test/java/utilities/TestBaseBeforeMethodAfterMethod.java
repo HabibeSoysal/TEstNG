@@ -17,7 +17,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
     protected Actions actions;
 
 
-    @BeforeMethod
+    @BeforeMethod(groups = "gp1")
     public void setup() {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
@@ -34,7 +34,7 @@ public abstract class TestBaseBeforeMethodAfterMethod {
 
     }
 
-    @AfterMethod
+    @AfterMethod(groups = "gp1")
     public void tearDown() {
         // driver.close();
     }

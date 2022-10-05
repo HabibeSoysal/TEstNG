@@ -32,6 +32,9 @@ public class AutomationExercise {
     @FindBy(xpath = "   (//*[@class='fa fa-shopping-cart'])[6]")
     public WebElement elbisEkle;
 
+    @FindBy(xpath = "//*[text()='Register / Login']")
+    public WebElement registerLogin;
+
     @FindBy(xpath = "//*[text()='View Cart']")
     public WebElement sepetiGoruntule;
 
@@ -47,7 +50,6 @@ public class AutomationExercise {
     public WebElement hesapSil;
 
 
-
     @FindBy(xpath = "//*[text()='recommended items']")
     public WebElement onerilenUrunler;
 
@@ -56,4 +58,23 @@ public class AutomationExercise {
 
     @FindBy(xpath = "//*[@class='cart_description']")
     public WebElement sepettekiUrun;
+    @FindBy(xpath = "(//*[@href='/view_cart'])[1]")
+    public WebElement sepetButonu;
+    @FindBy(xpath = "//*[@class='form-control']")
+    public WebElement yorumMetniAlani;
+    @FindBy(xpath = "//*[@data-qa='pay-button']")
+    public WebElement odeVeSiparisiOnayla;
+    @FindBy(xpath = "//*[@data-qa='name-on-card']")
+    public WebElement kartUzerindekiIsim;
+    @FindBy(xpath = "(//*[@class='alert-success alert'])[1]")
+    public WebElement siparisVerildi;
+    //*[text()='Congratulations! Your order has been confirmed!']
+    @FindBy(xpath = "//*[text()='Congratulations! Your order has been confirmed!']")
+    public WebElement siparisMEsajio;
+    @FindBy(xpath = "//*[@class='btn btn-default check_out']")
+    public WebElement faturaIndir;
+
+
+
+
 }

@@ -51,4 +51,5 @@ public class example01 {
         Assert.assertTrue(sauceDemo.thankYouYazisi.isDisplayed());
         driver.closeDriver();
     }
+
 }
