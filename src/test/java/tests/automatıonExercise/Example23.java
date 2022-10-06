@@ -4,7 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.AutomationExercise;
+import pages.AutomationExercisePage;
 import utilities.ConfigReader;
 import utilities.driver;
 
@@ -15,7 +15,7 @@ public class Example23 {
         //2. 'http://automationexercise.com' url'sine gidin
         driver.getDriver().get(ConfigReader.getProperty("aeUrl"));
         //3. Ana sayfanın başarıyla görünür olduğunu doğrulayın
-        AutomationExercise automationExercise = new AutomationExercise();
+        AutomationExercisePage automationExercise = new AutomationExercisePage();
         Assert.assertTrue(automationExercise.automationExerciseAnaSayfa.isDisplayed());
 
         //4. 'Kayıt Ol / Giriş Yap' düğmesini tıklayın

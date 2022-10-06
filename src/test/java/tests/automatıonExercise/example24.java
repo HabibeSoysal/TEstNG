@@ -4,16 +4,15 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import pages.AutomationExercise;
+import pages.AutomationExercisePage;
 import utilities.ConfigReader;
 import utilities.driver;
 
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class example24 {
-    AutomationExercise automationExercise = new AutomationExercise();
+    AutomationExercisePage automationExercise = new AutomationExercisePage();
 
     @Test
     public void test01() throws InterruptedException {
