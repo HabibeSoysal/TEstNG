@@ -9,7 +9,7 @@ import utilities.TestBaseBeforeMethodAfterMethod;
 import utilities.TestBaseCross;
 
 public class C02_HardAssert extends TestBaseCross {
-    @Test(groups = "gp1")
+    @Test
     public void test01() {
 
         // Hard Assertions : JUNit'te öğrendiğimiz assertion ile aynıdır.

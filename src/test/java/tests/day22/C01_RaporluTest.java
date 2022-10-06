@@ -27,7 +27,7 @@ public class C01_RaporluTest extends TestBaseRapor {
 
 //    -test data user email: customer@bluerentalcars.com ,
         brcPage.userEmail.sendKeys(ConfigReader.getProperty("userEmail"));
-
+extentTest.info("maile giriş yapıldı");
 //    -test data password : 12345 dataları girip login e basın -login butonuna tiklayin
         Actions actions = new Actions(driver.getDriver());
         actions.sendKeys(Keys.TAB).sendKeys(ConfigReader.getProperty("pass")).sendKeys(Keys.ENTER).perform();

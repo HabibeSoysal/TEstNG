@@ -10,6 +10,7 @@
 
 
     <!--TestNG de .xml file ile parallel test yapmak istersek suite tag'ından
-     sonra parallel tag'ı ile kaç browser'da çalıştırmak istersek thread-count takını kullanırız. -->
-
+     sonra parallel tag'ı ile kaç browser'da çalıştırmak istersek thread-count takını kullanırız.
+thread -count bulundugumuz sayfada kac tane test varsa onu calıstır
+verbose consolda yazılı olan ayrıntılı bir sekilde yazılması-->
 
