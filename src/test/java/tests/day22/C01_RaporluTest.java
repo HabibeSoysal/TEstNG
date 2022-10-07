@@ -22,7 +22,7 @@ public class C01_RaporluTest extends TestBaseRapor {
         extentTest.info("Blue Rent A CAr Sitesine gidildi");
 //    -login butonuna bas
         BrcPage brcPage = new BrcPage();
-        brcPage.login.click();
+        brcPage.brclogin.click();
         extentTest.info("login butonuna basildi");
 
 //    -test data user email: customer@bluerentalcars.com ,
