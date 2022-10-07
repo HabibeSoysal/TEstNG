@@ -42,7 +42,7 @@ public class P01 {
         Thread.sleep(2000);
         //Tüm yapılacakların silindiğini doğrulayın.
         List<WebElement> newtodos = webUniversityPage.newtodosWebelement;
-        Assert.assertEquals(0,newtodos.size());
+        Assert.assertFalse(newtodos.isEmpty());
 
         /*
         Keşif Testi (Exploratory Testing) , test senaryolarının önceden oluşturulmadığı,

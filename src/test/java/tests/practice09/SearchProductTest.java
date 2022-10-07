@@ -40,6 +40,7 @@ public class SearchProductTest extends TestBaseRapor {
         automationExerciseObje.buyutec.click();
         // 7. 'ARARAN ÜRÜNLER'in görünür olduğunu doğrulayın
         Assert.assertTrue(automationExerciseObje.arananUrunler.isDisplayed());
+
         List<WebElement> urunListesi = automationExerciseObje.urunlerList;
         for (WebElement each : urunListesi) {
             Assert.assertTrue(each.isDisplayed());

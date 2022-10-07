@@ -87,11 +87,41 @@ public class AutomationExercisePage {
     public WebElement buyutec;
     @FindBy(xpath = "//*[@class='title text-center']")
     public WebElement arananUrunler;
-    @FindBy(linkText = "View Product")
+    @FindBy(xpath = "(//*[text()='View Product'])[1]")
     public WebElement viewProduct;
     @FindBy(xpath = "(//h2)[3]")
     public WebElement urunIsmi;
     @FindBy(xpath = "//*[@class='product-image-wrapper']")
     public List<WebElement> urunlerList;
+
+    @FindBy(xpath = "//*[@class='fa fa-home']")
+    public WebElement anaSayfaButonu;
+
+    @FindBy(xpath = "(//*[@class='fa fa-list'])[1]")
+    public WebElement testCases;
+       @FindBy(xpath = "//*[@class='material-icons card_travel']")
+    public WebElement products;
+    @FindBy(xpath = "//*[@class='title text-center']")
+    public WebElement allProducts;
+    @FindBy(xpath = "//*[@class='col-sm-9 padding-right']")
+    public WebElement urunListesi;
+    @FindBy(xpath = "//*[@class='product-information']")
+    public WebElement urunSayfası;
+
+    @FindBy(xpath = "(//h2)[3]")
+    public WebElement urunAdi;
+    @FindBy(xpath = "(//p)[3]")
+    public WebElement urunKategorisi;
+    @FindBy(xpath = "(//span)[13]")
+    public WebElement fiyat;
+    @FindBy(xpath = "(//p)[4]")
+    public WebElement bulunabilirlik;
+    @FindBy(xpath = "(//p)[5]")
+    public WebElement durum;
+
+    @FindBy(xpath = "(//p)[6]")
+    public WebElement marka;
+
+
 }
 
